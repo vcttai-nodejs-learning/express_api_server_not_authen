@@ -16,3 +16,12 @@ https://dev.to/beznet/build-a-rest-api-with-node-express-mongodb-4ho4
 - dotenv:
   + Link: https://www.npmjs.com/package/dotenv
   + Tác dụng: hỗ trợ đọc các biến môi trường từ file .env
+
+4. Extension hỗ trợ gửi HTTP request trong Visual Code
+- Extension: Rest Client
+- Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+- Test: 
+  + Tạo file route.rest ở thư mục routes (có thể tạo chỗ khác cũng được)
+  + Viết chuỗi HTTP request, ví dụ: GET http://localhost:3000/subscribers
+  + Lúc đó sẽ hiện lên nút bấm "Send request" để thực thi request
+

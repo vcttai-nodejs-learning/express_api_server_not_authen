@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_api_exp",
+  "version": "1.0.0",
+  "description": "Build a REST API with Node, Express & MongoDB!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcttai/nodejs_api_exp.git"
+  },
+  "author": "vcttai@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcttai/nodejs_api_exp/issues"
+  },
+  "homepage": "https://github.com/vcttai/nodejs_api_exp#readme"
+}
+

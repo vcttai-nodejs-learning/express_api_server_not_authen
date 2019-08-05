@@ -15,6 +15,8 @@
   "bugs": {
     "url": "https://github.com/vcttai/nodejs_api_exp/issues"
   },
-  "homepage": "https://github.com/vcttai/nodejs_api_exp#readme"
+  "homepage": "https://github.com/vcttai/nodejs_api_exp#readme",
+  "dependencies": {
+    "mongodb": "^3.3.0-beta2"
+  }
 }
-

@@ -1,0 +1,45 @@
+1. Tải và cài đặt mongodb:
+- Win: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+   + Cài đặt dạng Network service hoặc local đều được
+   + Port mặc định là: 27017
+   + URL để connect: 'mongodb://localhost:27017'
+- Mac: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+2. Cài GUI cho mongoDB: Sử dụng MongoDB Compass
+- Tải về và cài đặt: https://www.mongodb.com/download-center/compass?jmp=hero
+- Kết nối với MongoDB local vừa tạo ở port mặc định là 27017
+
+3. Kết nối với MongoDB trong NodeJS
+- Dùng mongodb package:
+    + Cài đặt: npm install --save mongodb
+- Hướng dẫn căn bản: https://www.w3schools.com/nodejs/nodejs_mongodb.asp
+- Document của mongodb package: https://www.npmjs.com/package/mongodb
+- Ví dụ, chạy file sau: node src_exp\mongodb_connect_exp.js
+- Source kết nối mẫu:
+```
+const MongoClient = require('mongodb').MongoClient;
+
+const db_url = 'mongodb://localhost:27017';
+const db_name = 'test_new_db';
+
+MongoClient.connect(db_url, { useNewUrlParser: true }, function(err, client) {
+    if (err) throw err;
+
+    console.log("Connected to server successfully!");
+    const db = client.db(db_name);
+
+    client.close();
+})
+```
+
+4. Thuật ngữ so với Mysql
+|   ---- -----  ----  |    ----  -------  ----  |
+|        Mysql        |          MongoDB        |
+|   ---- -----  ----  |    ----  -------  ----  |
+|        table        |        collection       |
+|         row         |         document        |
+|       column        |           field         |
+|      group by       |   aggregation pipeline  |
+|        joins        |     embeded documents   |
+|        joins        |          $lookup        |
+|   ---- -----  ----  |    ----  -------  ----  |

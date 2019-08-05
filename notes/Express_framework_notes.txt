@@ -1,0 +1,18 @@
+Xây dựng một ứng dụng RestAPI với NodeJS, Express và MongoDB
+https://dev.to/beznet/build-a-rest-api-with-node-express-mongodb-4ho4
+
+1. Express có thể chạy web mà không cần "http" package
+- Code: src_exp\express_basic.js
+- Chạy thử: node src_exp\express_basic.js
+
+2. Mongoose là một dạng MongoDB Object Modeling hỗ trợ thao tác với MongoDB
+- Package: https://www.npmjs.com/package/mongoose
+  hoặc: https://mongoosejs.com/
+
+3. Một số package hỗ trợ
+- nodemon:
+  + Link: https://www.npmjs.com/package/nodemon
+  + Tác dụng: tự động load lại server khi có sự thay đổi source code 
+- dotenv:
+  + Link: https://www.npmjs.com/package/dotenv
+  + Tác dụng: hỗ trợ đọc các biến môi trường từ file .env

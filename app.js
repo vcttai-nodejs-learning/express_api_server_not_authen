@@ -3,11 +3,20 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var subscribersRouter = require('./routes/subscribers');
 
 var app = express();
+app.use(express.json());
+
+// Connect to Database
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
+const db = mongoose.connection;
+db.on('error', err => console.error(err));
+db.once('open', () => console.log('Connect to database successfully!'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,8 +28,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Config routers
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/subscribers', subscribersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -4,6 +4,11 @@
    + Port mặc định là: 27017
    + URL để connect: 'mongodb://localhost:27017'
 - Mac: https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+- Khởi động mongodb:
+  + Win: Nếu cài dạng Network service thì mongodb sẽ luôn chạy dạng 1 service nền
+  + Mac: 
+    ++ Để start mongodb, cần chạy lệnh: mongod (hoặc /usr/local/bin/mongod)
+    ++ Sau đó có thể dùng MongoDB Compass để truy suất vào mongodb
 
 2. Cài GUI cho mongoDB: Sử dụng MongoDB Compass
 - Tải về và cài đặt: https://www.mongodb.com/download-center/compass?jmp=hero

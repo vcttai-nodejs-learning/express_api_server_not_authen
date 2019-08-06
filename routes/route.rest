@@ -4,10 +4,28 @@ GET http://localhost:3000/subscribers
 
 ###
 
+GET http://localhost:3000/subscribers/5d492d8e241f0040249eaaa0
+
+###
+
 POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
     "name": "vcttai",
     "subscribedChannel": "nhungdongcodevui.com"
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/5d495925df8cf628980d3c01
+
+###
+
+PATCH http://localhost:3000/subscribers/5d495f440833ad2998ce4ccf
+Content-Type: application/json
+
+{
+    "name": "nhlong",
+    "subscribedChannel": "w3schools.com"
 }

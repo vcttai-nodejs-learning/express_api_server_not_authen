@@ -8,6 +8,10 @@ https://dev.to/beznet/build-a-rest-api-with-node-express-mongodb-4ho4
 2. Mongoose là một dạng MongoDB Object Modeling hỗ trợ thao tác với MongoDB
 - Package: https://www.npmjs.com/package/mongoose
   hoặc: https://mongoosejs.com/
+- Có thể định nghĩa 1 hoặc nhiều model/schema trên mỗi collection:
+  ref: 
+  https://stackoverflow.com/questions/14453864/use-more-than-one-schema-per-collection-on-mongodb/14454102#14454102
+  https://stackoverflow.com/questions/40079200/how-to-declare-collection-name-and-model-name-in-mongoose/40079267
 
 3. Một số package hỗ trợ
 - nodemon:

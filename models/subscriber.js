@@ -15,7 +15,8 @@ const document_describe = {
         default: Date.now
     }
 };
+const collection_name = { collection: 'subscribers' };
 
-const subscriberSchema = new mongoose.Schema(document_describe);
+const subscriberSchema = new mongoose.Schema(document_describe, collection_name);
 
 module.exports = mongoose.model('Subscriber', subscriberSchema);

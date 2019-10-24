@@ -48,3 +48,22 @@ MongoClient.connect(db_url, { useNewUrlParser: true }, function(err, client) {
 |        joins        |     embeded documents   |
 |        joins        |          $lookup        |
 |   ---- -----  ----  |    ----  -------  ----  |
+
+
+5. Sql vs NoSql
+- NoSql = Not Only Sql
+- Cấu trúc dữ liệu
+  Sql: Data phải có cấu trúc rõ ràng và như nhau cho mọi record (còn gọi là row)
+    -> nếu có record nào phát sinh thêm loại dữ liệu khác (cột khác) thì khó thay đổi
+  NoSql: Data của mỗi record (còn gọi là document) là không nhất thiết giống nhau
+    -> Mỗi document đều có thể linh động giá trị
+- Relationship
+  Sql: Mạnh ở khoản Relationship, vì nó có thể tách bảng và liên kết chúng lại để tránh gây trùng dữ liệu
+    (Các dạng chuẩn của DB giúp ta làm việc này)
+  NoSql: Liên kết của NoSql không phải dạng tham chiếu khoá ngoại, mà là tham chiếu đối tượng
+    Cơ bản là có thể không tách liên kết mà lưu trùng lặp thông tin lên mỗi document của NoSql cũng được
+  Sql: Mạnh ở nhiều loại liên kết (1-1, 1-n, n-n)
+  NoSql: Phù hợp với các ứng dụng liên kết 1-n  
+- Scalability
+  NoSql dễ scale bề ngang hơn Sql
+  
